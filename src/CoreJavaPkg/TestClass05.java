@@ -18,7 +18,7 @@ public class TestClass05 {
 				outputArray[j++]=inputArray[i];
 			}
 			
-			//Remaining input array elements copied as is to output array
+			//Remaining input array elements are then copied as is to output array
 			for(int i=reverseSubsetN;i<inputArray.length;i++) {
 				outputArray[j++]=inputArray[i];
 			}
@@ -32,6 +32,7 @@ public class TestClass05 {
 				System.out.print(o+" ");
 			}
 		}
+		//Catch the out of bounds exception if N > length of the input array
 		catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("Reverse Subset N cannot exceed input array length");
 		}

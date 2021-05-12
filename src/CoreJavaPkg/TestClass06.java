@@ -24,12 +24,13 @@ public class TestClass06 {
 						j<=input.lastIndexOf(input.charAt(i));
 						j++) 
 				{
-					//Count the occurrences between the first and last indexes only
+					//For that character, count the occurrences between the first and last indexes only 
 					if(input.charAt(i) == input.charAt(j)) {
 						count++;
 					}
 				}
-				//Add to the HashMap if not present already
+				//Add the <character,count> pair to the HashMap if not present already
+				//Since 'charAt' is not a String, it is converted to a String object
 				outputHash.putIfAbsent(String.valueOf(input.charAt(i)), count);
 
 				//Reset count
@@ -37,7 +38,8 @@ public class TestClass06 {
 			}
 			else {
 				//First and last index of the character are the same, means only 1 occurrence
-				//Add the <character,count> pair to the HashMap by converting the character to a String object
+				//Add the <character,count> pair to the HashMap 
+				//Since 'charAt' is not a String, it is converted to a String object
 				outputHash.put(String.valueOf(input.charAt(i)), 1);
 			}			
 		}
