@@ -8,7 +8,7 @@ public class TestClass04 {
 
 		public static void main(String args[]) {
 			int[] inputArray = {0,4,2,3,0,1,5,0,6,9,7};
-			int[] outputArray = new int[11];
+			int[] outputArray = new int[inputArray.length];
 			int j = 0;
 			
 			//Loop through input array and copy non-zero numbers to output array

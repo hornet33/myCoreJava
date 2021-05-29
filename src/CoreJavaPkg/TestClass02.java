@@ -7,7 +7,7 @@ package CoreJavaPkg;
 public class TestClass02 {
 
 	public static void main(String[] args) {
-		String t = "Selenium"; //"Sandeep Ashok Burte";
+		String t = "Sandeep Ashok Burte";
 		String[] o = null;	
 		String p;
 		

@@ -8,7 +8,7 @@ public class TestClass03 {
 
 	public static void main(String[] args) {
 		String ip = "This is a sample test String.";
-		String charToFind = "t";
+		String charToFind = "f";
 		int totalCount = 0;
 		
 		try {
@@ -24,7 +24,7 @@ public class TestClass03 {
 				
 				//Check if the charToFind is matched - if yes, increase the count 
 				//Notice the upper case conversion for both for case insensitive comparison
-				if (ip.toUpperCase().charAt(i) == charToFind.toUpperCase().charAt(0)) {
+				if(String.valueOf(ip.charAt(i)).equalsIgnoreCase(charToFind)) {
 					totalCount ++;
 				}
 			}

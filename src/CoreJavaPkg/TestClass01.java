@@ -9,7 +9,7 @@ public class TestClass01 {
 	public static void main (String[] args){
 
 		String t = "Python is a good scripting language";
-		String[] o = new String[6];		
+		String[] o = null;		
 		
 		System.out.println("Input: " + t);
 		

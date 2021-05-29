@@ -8,8 +8,8 @@ public class TestClass05 {
 
 	public static void main(String[] args) {
 		int[] inputArray = {1,3,5,7,9,11,13,15,17,19};
-		int[] outputArray = new int[10];
-		int reverseSubsetN = 4;
+		int[] outputArray = new int[inputArray.length];
+		int reverseSubsetN = 1;
 		int j = 0;
 		
 		try{

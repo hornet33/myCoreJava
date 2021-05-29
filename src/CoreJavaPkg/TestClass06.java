@@ -1,4 +1,4 @@
-//Core Java program to calculate the frequency of characters in a string
+//Core Java program to calculate the frequency of characters in a string (case sensitive)
 //Ex. Input String = "Selenium"
 //Ex. Output = "S=1,e=2,l=1,n=1,i=1,u=1,m=1"
 
@@ -10,7 +10,7 @@ import java.util.Map;
 public class TestClass06 {
 	
 	public static void main(String args[]) {
-		String input = "Selenium";
+		String input = "demanding";
 		int count = 0;
 		//Using a HashMap data structure to maintain <character,count> pair
 		LinkedHashMap<String,Integer> outputHash = new LinkedHashMap<String,Integer>();
@@ -18,20 +18,22 @@ public class TestClass06 {
 		//Loop through the input string for each character
 		for(int i=0;i<input.length();i++) {
 			
+			//Storing current character of input string in a temp String object  
+			String ipChar = String.valueOf(input.charAt(i));
+			
 			//If first and last index of the character are not the same, means more than 1 occurrence
-			if(input.indexOf(input.charAt(i)) != input.lastIndexOf(input.charAt(i))) {
-				for(int j=input.indexOf(input.charAt(i));
-						j<=input.lastIndexOf(input.charAt(i));
-						j++) 
-				{
+			if(input.indexOf(ipChar) != input.lastIndexOf(ipChar)) {
+				for(int j=input.indexOf(ipChar);
+						j<=input.lastIndexOf(ipChar);
+						j++) {
+					
 					//For that character, count the occurrences between the first and last indexes only 
-					if(input.charAt(i) == input.charAt(j)) {
+					if(ipChar.equals(String.valueOf(input.charAt(j)))){
 						count++;
 					}
 				}
-				//Add the <character,count> pair to the HashMap if not present already
-				//Since 'charAt' is not a String, it is converted to a String object
-				outputHash.putIfAbsent(String.valueOf(input.charAt(i)), count);
+				//Add the <character,count> pair to the HashMap if not present already to avoid duplicate reporting
+				outputHash.putIfAbsent(ipChar, count);
 
 				//Reset count
 				count = 0;
@@ -39,8 +41,7 @@ public class TestClass06 {
 			else {
 				//First and last index of the character are the same, means only 1 occurrence
 				//Add the <character,count> pair to the HashMap 
-				//Since 'charAt' is not a String, it is converted to a String object
-				outputHash.put(String.valueOf(input.charAt(i)), 1);
+				outputHash.put(ipChar, 1);
 			}			
 		}
 		
