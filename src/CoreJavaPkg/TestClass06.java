@@ -10,7 +10,7 @@ import java.util.Map;
 public class TestClass06 {
 	
 	public static void main(String args[]) {
-		String input = "demanding";
+		String input = "promiscuous";
 		int count = 0;
 		//Using a HashMap data structure to maintain <character,count> pair
 		LinkedHashMap<String,Integer> outputHash = new LinkedHashMap<String,Integer>();
