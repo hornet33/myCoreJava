@@ -12,7 +12,7 @@ import java.util.Stack;
 public class TestClass09 {
 	
 	public static void main(String[] args) {
-		String[] inputExp = {"([{}])","()[[]]{}","{]}","([()]"};
+		String[] inputExp = {"([{}])","()[[]]{}","{]}","([()]","[{)]"};
 		List<Integer> output = new ArrayList<Integer>();		
 		boolean balanceFlag = true;
 		
@@ -64,11 +64,11 @@ public class TestClass09 {
 				//If empty stack exception is caught during a pop operation, input is not balanced
 				catch (EmptyStackException e) {
 					balanceFlag = false; 
+					break;
 				}	
 				
-				//If the length of the input expression is reached and stack is not empty
+				//If the length of the input expression is reached and stack is not empty, input is not balanced
 				if(i==input.length()-1 && !exprStack.isEmpty()) {
-					//Not balanced flag set
 					balanceFlag = false;
 				}				
 			}
