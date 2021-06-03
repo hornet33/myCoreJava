@@ -8,8 +8,13 @@ public class TestClass05 {
 
 	public static void main(String[] args) {
 		int[] inputArray = {1,3,5,7,9,11,13,15,17,19};
+		
+		//Create outputArray which is the same size as the inputArray
 		int[] outputArray = new int[inputArray.length];
-		int reverseSubsetN = 1;
+		
+		//First 'reverseSubsetN' number of inputArray will be reversed, rest of the elements will remain intact
+		int reverseSubsetN = 7;
+		
 		int j = 0;
 		
 		try{
@@ -27,7 +32,8 @@ public class TestClass05 {
 			for(int i:inputArray) {
 				System.out.print(i+" ");
 			}
-			System.out.println();
+			
+			System.out.println();			
 			for(int o:outputArray) {
 				System.out.print(o+" ");
 			}
