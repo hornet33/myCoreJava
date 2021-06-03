@@ -14,10 +14,13 @@ public class TestClass07 {
 		
 		//Loop through the input String characters
 		for(int i=0;i<input.length();i++) {
+			
 			//Look for a character which has first and last index equal which means 1 occurrence (non-repeated)
 			if(inputAllLower.indexOf(inputAllLower.charAt(i)) == inputAllLower.lastIndexOf(inputAllLower.charAt(i))) {
+				
 				//Print the output
 				System.out.println("First non-repeated character in the string '" + input + "' is '"+ input.charAt(i) + "'.");
+				
 				//Exit the loop
 				break;
 			}
