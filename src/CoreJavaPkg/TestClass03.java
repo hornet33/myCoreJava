@@ -8,7 +8,9 @@ public class TestClass03 {
 
 	public static void main(String[] args) {
 		String ip = "This is a sample test String.";
+		
 		String charToFind = "f";
+		
 		int totalCount = 0;
 		
 		try {
