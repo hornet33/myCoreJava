@@ -15,51 +15,33 @@ public class TestClass12 {
 		
 		/******************************* Without using Collections framework *********************************/
 		//Split the input string with space as a delimiter
-		String[] ti = input.split("\s");
+		String[] temp = input.split("\s");
 		
 		//Var "output" will store the final output string
 		String output = "";
 		
-		//Var "existsFlag" will check if an input string is already added to the output string
-		boolean existsFlag = false;
-		
-		//Loop for all input strings split by space ("\s")
-		for(String si:ti) {
+		//Loop through each String in temp[]
+		for(String s:temp) {
+			System.out.println(output + " | " + s);
 			
-			//Split the output string with space as a delimiter
-			String[] to = output.split("\s");
-			
-			//Loop through each value of input string array
-			for(String so:to) {
-				
-				//Check each input string (Var "si") against each output string (Var "so")
-				//If input string matches any occurrence of output string, it is already present (duplicate)
-				if(si.equalsIgnoreCase(so)) {
-					
-					//Set "existsFlag" to true to signify that it's a duplicate entry
-					existsFlag = true;
-					
-					//Exit the for loop since it is already a duplicate - need not go through other output string values
-					break;
-				}
+			//Check if output contains the String 's' already
+			if(output.contains(s)) {
+				System.out.println("Continue");
+				//If it already contains, continue to the next String s in temp[]
+				continue;
 			}
-			
-			//IF existsFlag is false means not a duplicate element
-			if(!existsFlag) {
-				//Add it to the output string and also add a space at the end
-				output = output.concat(si).concat("\s");
+			else {//Add the String s to output string
+				System.out.println("Add");
+				output = output.concat(s).concat("\s");
 			}
-			
-			//Reset "existsFlag" to false for next iteration of input string
-			existsFlag = false;
 		}
 		
 		//Print the output
-		System.out.println("Without using Collections framework: " + output);
+		System.out.println("Without using Collections framework: '" + output.trim() + "'");
 		
 		/************************************ Using Collections framework *************************************/
 		Set<String> outSet = new LinkedHashSet<String>();
-		for(String si:ti) {
+		for(String si:temp) {
 			outSet.add(si);
 		}
 		System.out.println("Using Collections framework: " + outSet);
