@@ -13,8 +13,8 @@ public class TestClass14 {
 
 		//Check if number of rows of matrixA is equal to number of columns in matrixB - prerequisite to perform matrix multiplication
 		if(outMatrixRows != outMatrixCols) {
-			System.out.println("Cannot multiply given matrices since " +
-					"number of rows in Matrix A (" + outMatrixRows + ") are NOT EQUAL to number of columns in Matrix B (" + outMatrixCols + ")");
+			System.out.println("Cannot multiply given matrices: " +
+					"Number of rows in Matrix A (" + outMatrixRows + ") are NOT EQUAL to number of columns in Matrix B (" + outMatrixCols + ")");
 		}
 
 		else {//Continue with the matrix multiplication			
