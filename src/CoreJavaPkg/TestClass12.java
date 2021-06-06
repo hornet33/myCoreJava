@@ -27,10 +27,10 @@ public class TestClass12 {
 			//Check if output contains the String 's' already
 			if(output.contains(s)) {
 				System.out.println("Continue");
-				//If it already contains, continue to the next String s in temp[]
+				//If output string already contains current String s, continue to the next String s in temp[]
 				continue;
 			}
-			else {//Add the String s to output string
+			else {//Add the current String s to output string
 				System.out.println("Add");
 				output = output.concat(s).concat("\s");
 			}
