@@ -1,4 +1,4 @@
-//Core Java program to sort an integer array using selection sort [O(n^2) complexity
+//Core Java program to sort an integer array in ascending order using selection sort [O(n^2) complexity]
 //Ex. input = {5,4,2,3,8,6,7,1}
 //Ex. output = {1,2,3,4,5,6,7,8}
 
