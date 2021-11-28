@@ -3,12 +3,12 @@ package interviewPrep.searching;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] inputList = {12, 16, 24, 27, 28, 34, 59, 71}; //Pre-requisite to have the input search list to be sorted
-        int searchNum = 28;
+        int searchNum = 12;
 
         System.out.print("Input Array: ");
         printList(inputList);
 
-        int indexFound = doBinarySearch(inputList, 0, inputList.length, searchNum);
+        int indexFound = doBinarySearch(inputList, 0, inputList.length-1, searchNum);
         if (indexFound >= 0) {
             System.out.println("Number " + searchNum + " found at index " + indexFound);
         } else if (indexFound == -1) {
@@ -19,7 +19,7 @@ public class BinarySearch {
     public static int doBinarySearch(int[] inputArray, int lowerBound, int upperBound, int searchNum) {
 
         //Check to ensure array limits are not exceeded for both lower and upper bounds
-        if (upperBound > lowerBound) {
+        if (upperBound >= lowerBound) {
 
             //Calculate the middle index to search for this iteration
             int mid = lowerBound + (upperBound - lowerBound) / 2;

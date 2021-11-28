@@ -7,19 +7,20 @@ package interviewPrep.sorting;
 public class SelectionSort {
     public static void main(String[] args) {
         //Input array to sort
-        int[] inputList = {5,4,2,3,8,6,7,1};
+        int[] inputList = {5, 4, 2, 3, 8, 6, 7, 1};
 
         //Index of the smallest element for each array traversal
         int smallestElementIndex;
 
-        System.out.print("Input: " ); printList(inputList);
+        System.out.print("Input: ");
+        printList(inputList);
 
         //Sorting logic
         //Each traversal should find the smallest unsorted element in the array and swap with the current index
-        for(int i=0;i<inputList.length;i++){
+        for (int i = 0; i < inputList.length; i++) {
             smallestElementIndex = i;
-            for(int j=i;j<inputList.length;j++){
-                if(inputList[smallestElementIndex]>inputList[j]){
+            for (int j = i; j < inputList.length; j++) {
+                if (inputList[smallestElementIndex] > inputList[j]) {
                     smallestElementIndex = j;
                 }
             }
@@ -38,12 +39,13 @@ public class SelectionSort {
         }
 
         //Printing the final sorted array
-        System.out.print("Output: "); printList(inputList);
+        System.out.print("Output: ");
+        printList(inputList);
     }
 
     //Static method to print the integer array
-    public static void printList(int[] input){
-        for(int i: input){
+    public static void printList(int[] input) {
+        for (int i : input) {
             System.out.print(i + " ");
         }
         System.out.println();
