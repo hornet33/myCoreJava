@@ -2,7 +2,7 @@
 //Ex. input = {5,4,2,3,8,6,7,1}
 //Ex. output = {1,2,3,4,5,6,7,8}
 
-package interviewPrep;
+package interviewPrep.sorting;
 
 public class SelectionSort {
     public static void main(String[] args) {
