@@ -14,7 +14,7 @@ public class TestClass01 {
 		System.out.println("Input: " + t);
 		
 		//Split the input string on the " " (space) delimiter - this will return an array of strings stored in 'o[]'
-		o = t.split("\s"); 
+		o = t.split(" ");
 		
 		//Reset t to an empty string to prepare the output string in t
 		t = "";

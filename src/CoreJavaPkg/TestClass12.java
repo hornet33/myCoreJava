@@ -15,7 +15,7 @@ public class TestClass12 {
 		
 		/******************************* Without using Collections framework *********************************/
 		//Split the input string with space as a delimiter
-		String[] temp = input.split("\s");
+		String[] temp = input.split(" ");
 		
 		//Var "output" will store the final output string
 		String output = "";
@@ -32,7 +32,7 @@ public class TestClass12 {
 			}
 			else {//Add the current String s to output string
 				System.out.println("Add");
-				output = output.concat(s).concat("\s");
+				output = output.concat(s).concat(" ");
 			}
 		}
 		

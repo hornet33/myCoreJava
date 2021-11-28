@@ -16,7 +16,7 @@ public class TestClass02 {
 		//Check if input string contains any space
 		if(input.contains(" ")) {
 			//If yes, split the input string on the " " (space) delimiter which will return an array of strings stored in o[]
-			output = input.split("\s"); 
+			output = input.split(" ");
 			
 			//Reset t 
 			input = "";
@@ -30,7 +30,7 @@ public class TestClass02 {
 					 
 					 //If index j = 0 then it is at the end of the word, so add a ' ' (space) to var 't'
 					 if (j==0) {
-						 input = input.concat("\s");
+						 input = input.concat(" ");
 					 }
 				 } 
 			}			
