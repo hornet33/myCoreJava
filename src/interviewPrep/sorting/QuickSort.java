@@ -1,3 +1,7 @@
+//Core Java program to sort an integer array in ascending order using quick sort [O(n^2) complexity]
+//Ex. input = {5,4,2,3,8,6,7,1}
+//Ex. output = {1,2,3,4,5,6,7,8}
+
 package interviewPrep.sorting;
 
 public class QuickSort {
@@ -31,6 +35,7 @@ public class QuickSort {
     //Partition subroutine of quick-sort algorithm
     public static int partition(int[] arr, int low, int high) {
         //Objective of this subroutine is to ensure that the pivot value gets placed at its right position
+        //Initialized to the last (high) element of the array arr[high]
         int pivot = arr[high];
 
         //Initialize to index of smaller element
