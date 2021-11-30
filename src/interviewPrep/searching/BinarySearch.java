@@ -1,12 +1,13 @@
 package interviewPrep.searching;
 
+import java.util.Arrays;
+
 public class BinarySearch {
     public static void main(String[] args) {
         int[] inputList = {12, 16, 24, 27, 28, 34, 59, 71}; //Pre-requisite to have the input search list to be sorted
         int searchNum = 12;
 
-        System.out.print("Input Array: ");
-        printList(inputList);
+        System.out.println("Input Array: " + Arrays.toString(inputList));
 
         int indexFound = doBinarySearch(inputList, 0, inputList.length-1, searchNum);
         if (indexFound >= 0) {
@@ -43,13 +44,5 @@ public class BinarySearch {
             }
         }
         return -1; //Element not found
-    }
-
-    //Static method to print the integer array
-    public static void printList(int[] input) {
-        for (int i : input) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
     }
 }
