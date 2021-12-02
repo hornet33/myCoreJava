@@ -8,14 +8,13 @@ public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> visitedNums = new LinkedHashMap<Integer, Integer>();
         int[] indices = new int[2];
-        Integer x = 0;
+        int x = 0;
 
         for (int i = 0; i < nums.length; i++) {
             indices[0] = i;
             x = target - nums[i];
             if (visitedNums.isEmpty()) {
                 visitedNums.put(nums[i], i);
-                continue;
             } else {
                 if (visitedNums.get(x) != null) {
                     indices[1] = visitedNums.get(x);
