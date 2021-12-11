@@ -2,7 +2,7 @@
 //Ex. Input = 123456
 //Ex. Output = 654321
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 public class TestClass15 {
     public static void main(String[] args) {

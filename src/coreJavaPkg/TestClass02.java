@@ -2,7 +2,7 @@
 //Ex., input: Sandeep Ashok Burte
 //Ex., output: peednaS kohsA etruB
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 public class TestClass02 {
 
