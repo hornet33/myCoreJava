@@ -2,7 +2,7 @@
 //Ex. Input = {2,0,4,0,3,0,5}
 //Ex. Output = {2,4,3,5,0,0,0}
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 public class TestClass04 {
 

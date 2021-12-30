@@ -2,7 +2,7 @@
 //Ex. Input1 = 121, Input2 = 123
 //Ex. Output2 = "Palindrome", Output2 = "Not a palindrome"
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 public class TestClass11 {
 

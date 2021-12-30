@@ -2,7 +2,7 @@
 //Ex. Input Array = [1,3,5,7,9,11,15,17,19] | Reverse subset N = 5
 //Ex. Output Array = [9,7,5,3,1,11,15,17,19] (first N = 5 elements reversed, rest elements same as input)
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 public class TestClass05 {
 
