@@ -6,11 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestClass17 {
-
     public List<Integer> findCharPositions(String inputString, char inputCharacter) {
         List<Integer> foundPosition = new ArrayList<>();
         int currentIndex = 0;
-        int i = 0;
         char[] strToCharArray = inputString.toCharArray();
         for (char c : strToCharArray) {
             if (c == inputCharacter) {
