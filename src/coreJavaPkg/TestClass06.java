@@ -49,8 +49,9 @@ public class TestClass06 {
 		//outputHash.forEach((s,n) -> System.out.println(s + ": " + n));
 		
 		//Alternatively can use a for loop like shown below:
-		for(Map.Entry<String,Integer> mapSet: outputHash.entrySet()) {
-			System.out.println(mapSet.getKey() +": " + mapSet.getValue());
-		}
+//		for(Map.Entry<String,Integer> mapSet: outputHash.entrySet()) {
+//			System.out.println(mapSet.getKey() +": " + mapSet.getValue());
+//		}
+		System.out.println(outputHash);
 	}
 }
