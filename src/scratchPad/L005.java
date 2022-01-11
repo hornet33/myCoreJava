@@ -13,14 +13,14 @@ public class L005 {
         String input = sc.next();
         char[] chArray = input.toCharArray();
 
-        Map<String, Integer> charCount = new LinkedHashMap<>();
+        Map<Character, Integer> charCount = new LinkedHashMap<>();
 
         for (char c: chArray){
-            if(charCount.containsKey(String.valueOf(c))){
-                charCount.put(String.valueOf(c), charCount.get(String.valueOf(c)) + 1);
+            if(charCount.containsKey(c)){
+                charCount.put(c, charCount.get(c) + 1);
             }
             else{
-                charCount.put(String.valueOf(c), 1);
+                charCount.put(c, 1);
             }
         }
         System.out.println(charCount);
