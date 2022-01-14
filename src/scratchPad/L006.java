@@ -1,3 +1,4 @@
+//Program to find the two elements from an array that are equal to a given sum 'k'
 package scratchPad;
 
 public class L006 {
