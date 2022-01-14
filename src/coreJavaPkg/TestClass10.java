@@ -2,7 +2,7 @@
 //Ex. Input1 = "}{", Input2 = "{{}{"
 //Ex. Output2 = 2, Output2 = 1
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 import java.util.ArrayList;
 import java.util.List;

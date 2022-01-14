@@ -2,7 +2,7 @@
 //Ex. Input String = "Selenium"
 //Ex. Output = "S=1,e=2,l=1,n=1,i=1,u=1,m=1"
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

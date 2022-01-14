@@ -2,7 +2,7 @@
 //Ex. Input char = "*", number of rows = 3
 //Ex. Output line 1 = "*", line 2 = "**", line 3 = "***"
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 public class TestClass13 {
 

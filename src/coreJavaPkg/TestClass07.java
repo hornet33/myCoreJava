@@ -2,7 +2,7 @@
 //Ex. Input = "This is a test string."
 //Ex. Output = "h"
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 public class TestClass07 {
 

@@ -2,7 +2,7 @@
 //Ex. Input = inputArray = {1,5,2,78,3,67} / indexRange = {2,4}
 //Ex. Output = inputArray[2] + ... + inputArray[4] = 2+78+3 = 83
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 public class TestClass08 {
 

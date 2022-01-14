@@ -2,7 +2,7 @@
 //Ex. input = "Python is a good scripting language"
 //Ex. output = "Piagsl"
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 public class TestClass01 {
 

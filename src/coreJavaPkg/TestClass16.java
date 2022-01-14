@@ -1,4 +1,4 @@
-package coreJavaPkg;
+package CoreJavaPkg;
 
 import interviewPrep.searching.BinarySearch;
 import java.util.Arrays;

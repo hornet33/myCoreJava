@@ -2,7 +2,7 @@
 //Ex., input string = "This is a sample test String."; letter to find = 's'
 //Ex., output = 5
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 public class TestClass03 {
 

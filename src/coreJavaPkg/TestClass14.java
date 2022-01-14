@@ -2,7 +2,7 @@
 //Ex. Input matrixA[][] = {{1,2},{2,3}} and matrixB[][] = {{10,20},{30,40}}
 //Ex. Output[][] = {{70,100},{110,160}}
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 public class TestClass14 {
 	

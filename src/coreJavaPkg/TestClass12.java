@@ -2,7 +2,7 @@
 //Ex. Input = "Selenium Rahul Maven Rahul"
 //Ex. Output = "Selenium Rahul Maven"
 
-package coreJavaPkg;
+package CoreJavaPkg;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
