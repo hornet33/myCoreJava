@@ -18,9 +18,9 @@ public class L007 {
         System.out.println(sOut);
 
 
-        String str = "This#string%contains^special*characters&.";
-        str = str.replaceAll("[^a-zA-Z0-9]", " ");
+        in = "This#string%contains^special*characters&.";
+        in = in.replaceAll("[^a-zA-Z0-9]", " ");
         //Regex '^' means NOT so "[^a-z]" means NOT in the range "a-z"
-        System.out.println(str);
+        System.out.println(in);
     }
 }
