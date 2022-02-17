@@ -18,7 +18,7 @@ public class TestClass18 {
         //Loop through the length of the first string
         for (int i = 0; i <= l1; i++) {
 
-            //If the character in first string v1 is not found in second string (values[1]), return false
+            //If any character in first string v1 is not found in second string (values[1]), return false
             if (values[1].indexOf(v1[i]) == -1) {
                 return false;
             }
