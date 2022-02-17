@@ -23,7 +23,7 @@ public class TestClass18 {
                 return false;
             }
         }
-        //Return true since lengths are the same and all characters in both strings, return true
+        //Since lengths are the same and all characters are present in both strings, return true
         return true;
     }
 
