@@ -9,7 +9,7 @@ public class L004 {
 //        Map<String, Integer> myMap = new HashMap<>();
 //
 //        mySet.add("Apples");
-////        mySet.add("Apples");
+//        mySet.add("Apples");
 //        System.out.println(mySet);
 //        for (String item: mySet
 //             ) {
@@ -17,7 +17,7 @@ public class L004 {
 //        }
 //
 //        myMap.put("Apples",10);
-////        myMap.put("Apples", 20);
+//        myMap.put("Apples", 20);
 //        System.out.println(myMap);
 //
 //        Scanner sc = new Scanner(System.in);

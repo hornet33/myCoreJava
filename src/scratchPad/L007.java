@@ -15,7 +15,7 @@ public class L007 {
                 sOut += c;
             }
         }
-        System.out.println(sOut);
+        System.out.println(in + " -> " + sOut);
 
 
         in = "This#string%contains^special*characters&.";

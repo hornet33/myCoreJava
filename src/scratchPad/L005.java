@@ -10,19 +10,17 @@ public class L005 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String input = sc.next();
-        char[] chArray = input.toCharArray();
-
-        Map<Character, Integer> charCount = new LinkedHashMap<>();
+        char[] chArray = sc.next().toCharArray();
+        Map<Character, Integer> charCountMap = new LinkedHashMap<>();
 
         for (char c: chArray){
-            if(charCount.containsKey(c)){
-                charCount.put(c, charCount.get(c) + 1);
+            if(charCountMap.containsKey(c)){
+                charCountMap.put(c, charCountMap.get(c) + 1);
             }
             else{
-                charCount.put(c, 1);
+                charCountMap.put(c, 1);
             }
         }
-        System.out.println(charCount);
+        System.out.println(charCountMap);
     }
 }
