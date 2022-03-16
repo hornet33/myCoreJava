@@ -4,10 +4,7 @@
 
 package scratchPad;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
-
-public class L11 {
+public class L011 {
     public static StringBuilder removeDuplicateFromString(String inStr) {
         StringBuilder finalString = new StringBuilder();
 
