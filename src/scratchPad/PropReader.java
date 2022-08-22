@@ -21,7 +21,7 @@ public class PropReader {
                 reader.close();
             }
         } catch (IOException e) {
-            throw new RuntimeException("Properties file not found at " + propertyFilePath);
+            throw new RuntimeException("Properties file not found: " + propertyFilePath + " - please try again");
         }
 
         //Iterating through all properties
