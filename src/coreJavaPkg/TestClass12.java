@@ -2,8 +2,9 @@
 //Ex. Input = "Selenium Rahul Maven Rahul"
 //Ex. Output = "Selenium Rahul Maven"
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
+import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -13,7 +14,7 @@ public class TestClass12 {
 		String input = "Rahul Selenium Rahul Caterpillar Rahul Test Selenium";		
 		System.out.println("Input String: " + input);
 		
-		/******************************* Without using Collections framework *********************************/
+		/* ****************************** Without using Collections framework ******************************** */
 		//Split the input string with space as a delimiter
 		String[] temp = input.split(" ");
 		
@@ -28,8 +29,7 @@ public class TestClass12 {
 			if(output.contains(s)) {
 				System.out.println("Continue");
 				//If output string already contains current String s, continue to the next String s in temp[]
-				continue;
-			}
+            }
 			else {//Add the current String s to output string
 				System.out.println("Add");
 				output = output.concat(s).concat(" ");
@@ -38,12 +38,10 @@ public class TestClass12 {
 		
 		//Print the output
 		System.out.println("Without using Collections framework: '" + output.trim() + "'");
-		
-		/************************************ Using Collections framework *************************************/
-		Set<String> outSet = new LinkedHashSet<String>();
-		for(String si:temp) {
-			outSet.add(si);
-		}
+
+		/* *********************************** Using Collections framework ************************************ */
+		Set<String> outSet = new LinkedHashSet<>();
+        Collections.addAll(outSet, temp);
 		System.out.println("Using Collections framework: " + outSet);
 	}
 }

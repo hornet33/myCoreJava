@@ -1,7 +1,7 @@
 //Program to find if two strings are anagrams or not
 //Ex. S1 = "life", S2 = "file" | Output = "Anagrams"
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 public class TestClass18 {
     public static Boolean isAnagram(String[] values) {

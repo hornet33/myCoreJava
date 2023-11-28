@@ -1,6 +1,6 @@
 // Core Java program to return all the positions where an input character is found in an input string
 // Ex. Input String = "Sample String", Input Char = 'S' | Output = [1, 8]
-package CoreJavaPkg;
+package coreJavaPkg;
 
 import java.util.ArrayList;
 import java.util.List;

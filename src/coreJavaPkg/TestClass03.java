@@ -2,7 +2,7 @@
 //Ex., input string = "This is a sample test String."; letter to find = 's'
 //Ex., output = 5
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 public class TestClass03 {
 
@@ -37,7 +37,7 @@ public class TestClass03 {
 		
 		//Error handling: If the charToFind is not found in the input string "ip" , an exception will be generated
 		catch (StringIndexOutOfBoundsException se) {
-			System.out.println("Cannot find \'" + charToFind + "\' in \'" + ip + "\'");			
+			System.out.println("Cannot find '" + charToFind + "' in '" + ip + "'");
 		}
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] inputList = {12, 16, 24, 27, 28, 34, 59, 71}; //Pre-requisite to have the input search list to be sorted
-        int searchNum = 12;
+        int searchNum = 65;
 
         System.out.println("Input Array: " + Arrays.toString(inputList));
 

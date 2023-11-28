@@ -16,7 +16,6 @@ public class L002 {
         System.out.println(pantry.get("Apples"));
 
         pantry.put("Apples", 10);
-        System.out.println(pantry.toString());
         System.out.println(pantry);
     }
 }
