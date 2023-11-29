@@ -9,7 +9,7 @@ public class TestClass03 {
 	public static void main(String[] args) {
 		String ip = "This is a sample test String.";
 		
-		String charToFind = "f";
+		String charToFind = "s";
 		
 		int totalCount = 0;
 		
@@ -24,8 +24,7 @@ public class TestClass03 {
 					i++
 				) {
 				
-				//Check if the charToFind is matched - if yes, increase the count 
-				//Notice the upper case conversion for both for case insensitive comparison
+				//Check if the charToFind is matched - if yes, increase the count
 				if(String.valueOf(ip.charAt(i)).equalsIgnoreCase(charToFind)) {
 					totalCount ++;
 				}
