@@ -1,22 +1,35 @@
 package scratchPad;
 class Animal {
-    int x = 20;
+    int age = 2;
+
+    void sound(){
+        System.out.println("Animal makes noise.");
+    }
 }
-class Bowbow extends Animal {
-    int x = 30;
-    int y = 50;
+class Dog extends Animal {
+    int age = 10;
+    int weight = 20;
+
+    @Override
+    void sound() {
+        System.out.println("Dogs bark.");
+    }
 }
 
 public class L019 {
     public static void main(String[] args) {
         Animal a = new Animal();
-        System.out.println(a.x);
+        System.out.println(a.age);
+        a.sound();
 
-        Bowbow b = new Bowbow();
-        System.out.println(b.x);
-        System.out.println(b.y);
+        Dog d = new Dog();
+        System.out.println(d.age);
+        System.out.println(d.weight);
+        d.sound();
 
-        a = new Bowbow();
-        System.out.println(a.x);
+        a = new Dog();
+        System.out.println(a.age);
+        //System.out.println(a.weight);
+        a.sound();
     }
 }
