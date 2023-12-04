@@ -17,6 +17,7 @@ public class L018 {
         System.out.println(l);
         Collections.sort(l);
         System.out.println(l);
+        System.out.printf("Second Largest Element: %s \n", l.get(l.size()-2));
         l.sort(Collections.reverseOrder());
         System.out.println(l);
         System.out.printf("Second Largest Element: %s \n", l.get(1));
