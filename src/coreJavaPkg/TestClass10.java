@@ -2,7 +2,7 @@
 //Ex. Input1 = "}{", Input2 = "{{}{"
 //Ex. Output2 = 2, Output2 = 1
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,10 +13,10 @@ public class TestClass10 {
 	public static int getMinStepsForReversal(String input) {
 		
 		//Use the stack data structure to maintain the logic
-		Stack<Character> expStack = new Stack<Character>();
+		Stack<Character> expStack = new Stack<>();
 		
 		//Where m = total open braces and n = total close braces
-		//toalBrackets = m + n
+		//totalBrackets = m + n
 		int totalBrackets = 0;
 		int n = 0;
 		
@@ -42,12 +42,11 @@ public class TestClass10 {
 				if(!expStack.isEmpty() && expStack.peek() == '{') {
 					//Remove the balanced portion from consideration as it will not need any reversals
 					expStack.pop();
-					break;
 				}
 				//Otherwise push the closing bracket to the stack
 				else { 
-					expStack.push(ch); 
-					break; 
+					expStack.push(ch);
+					break;
 				}
 			}
 		}
@@ -73,7 +72,7 @@ public class TestClass10 {
 
 	public static void main(String[] args) {
 		String[] inputExp = {"}","{","{{}{","}}{{","{{}","{}","}{"};
-		List<Integer> output = new ArrayList<Integer>();
+		List<Integer> output = new ArrayList<>();
 		
 		//For each input expression, call the method and add the return value to the output List
 		for(String s: inputExp) {

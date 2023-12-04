@@ -15,7 +15,7 @@ interface A {
 abstract class B implements A {
     @Override
     public void c() {
-        System.out.println("I am C");
+        System.out.println("I am c");
     }
 }
 
@@ -23,17 +23,48 @@ abstract class B implements A {
 class M extends B {
     @Override
     public void a() {
-        System.out.println("I am a");
+        System.out.println("I am M's a");
     }
 
     @Override
     public void b() {
-        System.out.println("I am b");
+        System.out.println("I am M's b");
     }
 
     @Override
     public void d() {
-        System.out.println("I am d");
+        System.out.println("I am M's d");
+    }
+
+    @Override
+    public void c() {
+        System.out.println("I am M's c");
+    }
+
+    protected void e(){
+        System.out.println("I am M's e");
+    }
+}
+
+class N extends B {
+    @Override
+    public void a(){
+        System.out.println("I am N's a");
+    }
+
+    @Override
+    public void b(){
+        System.out.println("I am N's b");
+    }
+
+    @Override
+    public void c(){
+        System.out.println("I am N's c");
+    }
+
+    @Override
+    public void d() {
+        System.out.println("I am N's d");
     }
 }
 
@@ -45,5 +76,19 @@ class L013 {
         a.b();
         a.c();
         a.d();
+        ((M) a).e(); //Downcast to type of class M to access method e() which only belongs to class M
+        System.out.println();
+
+        a = new N();
+        a.a();
+        a.b();
+        a.c();
+        a.d();
+        System.out.println();
+
+        B b = new M();
+        b.a();
+        b.c();
+        ((M) b).e(); //Downcast to type of class M to access method e() which only belongs to class M
     }
 }

@@ -2,18 +2,17 @@
 //Ex. Input String = "Selenium"
 //Ex. Output = "S=1,e=2,l=1,n=1,i=1,u=1,m=1"
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class TestClass06 {
 	
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		String input = "promiscuous";
 		int count = 0;
 		//Using a HashMap data structure to maintain <character,count> pair
-		LinkedHashMap<String,Integer> outputHash = new LinkedHashMap<String,Integer>();
+		LinkedHashMap<String,Integer> outputHash = new LinkedHashMap<>();
 		
 		//Loop through the input string for each character
 		for(int i=0;i<input.length();i++) {

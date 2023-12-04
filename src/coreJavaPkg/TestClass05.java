@@ -2,7 +2,9 @@
 //Ex. Input Array = [1,3,5,7,9,11,15,17,19] | Reverse subset N = 5
 //Ex. Output Array = [9,7,5,3,1,11,15,17,19] (first N = 5 elements reversed, rest elements same as input)
 
-package CoreJavaPkg;
+package coreJavaPkg;
+
+import java.util.Arrays;
 
 public class TestClass05 {
 
@@ -29,16 +31,10 @@ public class TestClass05 {
 			}
 	
 			//Print input and output
-			for(int i:inputArray) {
-				System.out.print(i+" ");
-			}
-			
-			System.out.println();			
-			for(int o:outputArray) {
-				System.out.print(o+" ");
-			}
+			System.out.println(Arrays.toString(inputArray));
+			System.out.println(Arrays.toString(outputArray));
 		}
-		//Catch the out of bounds exception if N > length of the input array
+		//Catch the out-of-bounds exception if N > length of the input array
 		catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("Reverse Subset N cannot exceed input array length");
 		}

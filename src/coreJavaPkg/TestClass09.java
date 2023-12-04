@@ -2,7 +2,7 @@
 //Ex. Input1 = "[{}]", Input2 = "{[}]"
 //Ex. Output2 = "Balanced", Output2 = "Not balanced"
 
-package CoreJavaPkg;
+package coreJavaPkg;
 
 import java.util.ArrayList;
 import java.util.EmptyStackException;
