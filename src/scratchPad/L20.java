@@ -17,5 +17,6 @@ public class L20 {
         list.add("4");
         list.add("5");
         System.out.println(list.size());
+        System.out.println(list);
     }
 }
